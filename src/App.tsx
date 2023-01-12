@@ -1,6 +1,6 @@
-import { Home } from "@mui/icons-material";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Home from "./components/router/Home";
 
 function App() {
   return (
