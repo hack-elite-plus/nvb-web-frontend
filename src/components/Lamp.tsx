@@ -24,7 +24,7 @@ const Lamp: React.FC<lampInterface> = (props) => {
     filter: blur(${blur});
   `;
 
-  return <Box css={lampStyle} component="div" sx={{ ...sx }}></Box>;
+  return <Box css={lampStyle} component="div" sx={sx}></Box>;
 };
 
 export default Lamp;
