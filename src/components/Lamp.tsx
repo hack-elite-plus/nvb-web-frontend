@@ -3,20 +3,16 @@
 
 import { Box, css, SxProps, Theme } from "@mui/material";
 import React from "react";
-import { numToPixels } from "../utils/util";
 
 interface lampInterface {
+  radius: string;
   color: string;
-  radius?: string | number;
-  blur?: string | number;
+  blur?: string;
   sx?: SxProps<Theme>;
 }
 
 const Lamp: React.FC<lampInterface> = (props) => {
-  let { radius, color, blur } = props;
-
-  radius = numToPixels(radius, "200px");
-  blur = numToPixels(blur, "250px");
+  let { radius, color, blur = "250px", sx = {} } = props;
 
   const lampStyle = css`
     width: calc(${radius} * 2);
@@ -28,7 +24,7 @@ const Lamp: React.FC<lampInterface> = (props) => {
     filter: blur(${blur});
   `;
 
-  return <Box css={lampStyle} component="div" sx={{ ...props?.sx }}></Box>;
+  return <Box css={lampStyle} component="div" sx={{ ...sx }}></Box>;
 };
 
 export default Lamp;
