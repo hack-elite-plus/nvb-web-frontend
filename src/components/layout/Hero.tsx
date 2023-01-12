@@ -40,15 +40,15 @@ const Hero: React.FC = () => {
             mt: 10,
           }}
         >
-          <Typography component="h2" variant="h2">
+          <Typography component="h2" variant="h2" sx={{ ml: { xs: 2, lg: 0 } }}>
             <Box
               fontWeight={500}
               textTransform="uppercase"
               display="inline-block"
             >
-              Nimbus Venture
+              Nimbus Venture&nbsp;
             </Box>
-            &nbsp;Band
+            Band
           </Typography>
 
           <Typography component="p" sx={{ mt: 1, maxWidth: "90%" }}>
