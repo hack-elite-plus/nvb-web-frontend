@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 
-/raw_assets
+/src/raw_assets
