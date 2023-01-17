@@ -25,8 +25,6 @@ const mediaContainerStyle = css`
     position: relative;
     object-fit: cover;
     object-position: center;
-    margin: 0;
-    padding: 0;
   }
 `;
 
