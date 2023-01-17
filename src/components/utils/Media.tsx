@@ -45,7 +45,10 @@ const Media: React.FC<ImageProps> = (props) => {
     <Box css={mediaContainerStyle}>
       <Box
         css={
-          saturate && css`animation: ${saturateAnimation} 2s forwards ease-in;`
+          saturate &&
+          css`
+            animation: ${saturateAnimation} 2s forwards ease-in;
+          `
         }
         component="img"
         alt={alt}
