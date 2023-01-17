@@ -5,6 +5,9 @@ import FeatPet from "./features/FeatPet";
 import FeatFallDetection from "./features/FeatFallDetection";
 import FeatExtra from "./features/FeatExtra";
 import FeatGPS from "./features/FeatGPS";
+import FeatMore from "./features/FeatMore";
+
+
 
 const Features: React.FC = () => {
   return (
@@ -15,6 +18,7 @@ const Features: React.FC = () => {
       <FeatPet />
       <FeatFallDetection />
       <FeatExtra />
+      <FeatMore/>
     </>
   );
 };
