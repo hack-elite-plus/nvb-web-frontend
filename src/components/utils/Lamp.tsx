@@ -4,14 +4,14 @@
 import { Box, css, SxProps, Theme } from "@mui/material";
 import React from "react";
 
-interface lampInterface {
+interface LampProps {
   radius: string;
   color: string;
   blur?: string;
   sx?: SxProps<Theme>;
 }
 
-const Lamp: React.FC<lampInterface> = (props) => {
+const Lamp: React.FC<LampProps> = (props) => {
   let { radius, color, blur = "250px", sx = {} } = props;
 
   const lampStyle = css`
