@@ -10,6 +10,7 @@ interface ImageProps {
   alt?: string;
   saturate?: boolean;
   sx?: SxProps<Theme>;
+  children?: JSX.Element[] | JSX.Element;
 }
 
 const mediaContainerStyle = css`
@@ -40,7 +41,7 @@ const saturateAnimation = keyframes`
 }`;
 
 const Media: React.FC<ImageProps> = (props) => {
-  const { src, alt="", sx = {}, saturate = false } = props;
+  const { src, alt = "", sx = {}, saturate = false, children = <></> } = props;
 
   return (
     <Box css={mediaContainerStyle}>
@@ -53,6 +54,7 @@ const Media: React.FC<ImageProps> = (props) => {
         src={src}
         sx={sx}
       />
+      {children}
     </Box>
   );
 };
