@@ -24,7 +24,7 @@ const FeatExtra: React.FC = () => {
             sx={{ mb: 20 }}
           >
             <Typography component="h2" variant="h2">
-              More Features
+              Features
             </Typography>
 
             <Stack
