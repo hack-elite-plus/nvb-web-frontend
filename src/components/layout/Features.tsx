@@ -8,7 +8,6 @@ import FeatGPS from "./features/FeatGPS";
 import FeatMore from "./features/FeatMore";
 
 
-
 const Features: React.FC = () => {
   return (
     <>
