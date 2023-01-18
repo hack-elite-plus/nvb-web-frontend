@@ -21,13 +21,10 @@ const Hero: React.FC = () => {
                 alt="A photo of nimbus venture band"
                 saturate
                 sx={{ width: { xs: "80%", md: "100%" }, top: { md: 100 } }}
-              />
+              >
+                <Lamp radius="200px" color="#7f4cf7" />
+              </Media>
             </Box>
-            <Lamp
-              radius="200px"
-              color="#7f4cf7"
-              sx={{ top: { md: "30%", xs: "0%" } }}
-            />
           </Parallax>
         </Box>
 
