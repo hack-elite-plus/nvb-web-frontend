@@ -51,16 +51,17 @@ const Footer: React.FC = () => (
       <Container maxWidth="lg" sx={{ pt: 12 }}>
         <Stack direction="column">
           <Stack
+            spacing={{sm: 0, xs: 6}}
             justifyContent="space-around"
             direction={{ md: "row", xs: "column" }}
-            sx={{ mb: 10 }}
+            sx={{ mb: 10, ml: {xs: 4, sm: 0}}}
           >
             <Link
               href="https://nimbusventure.com/"
               target="_blank"
               rel="noopener"
             >
-              <Media src={logo} alt="" sx={{ width: "200px", left: 0 }}></Media>
+              <Media src={logo} alt="" sx={{ width: "200px", left: 0, mb: {xs: 10, sm: 0} }}></Media>
             </Link>
 
             {nimbusFooterLinks.map((item, index) => (
@@ -105,7 +106,7 @@ const Footer: React.FC = () => (
                 </Link>
               </Typography>
               <Typography component="h5" variant="h5" sx={{ mb: 4 }}>
-              <Link
+                <Link
                   variant="h5"
                   color="inherit"
                   underline="none"
@@ -115,7 +116,6 @@ const Footer: React.FC = () => (
                 >
                   Contact Us
                 </Link>
-                
               </Typography>
             </Stack>
           </Stack>
