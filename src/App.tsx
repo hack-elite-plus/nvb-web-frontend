@@ -4,7 +4,7 @@ import {
   PaletteMode,
   ThemeProvider,
 } from "@mui/material";
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/router/Home";
 
@@ -31,7 +31,8 @@ const getDesignTokens = (mode: PaletteMode) => ({
 });
 
 function App() {
-  const [mode, setMode] = React.useState<"light" | "dark">("dark");
+  const [isSignInShow, setSignInShow] = useState(false);
+  const [mode, setMode] = useState<"light" | "dark">("dark");
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
@@ -47,7 +48,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Routes>
-        <Route path="/" element={<Home toggleColorMode={colorMode.toggleColorMode}/>} />
+        <Route path="/" element={<Home setSignInShow={setSignInShow} toggleColorMode={colorMode.toggleColorMode}/>} />
       </Routes>
     </ThemeProvider>
   );
