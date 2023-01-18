@@ -17,8 +17,11 @@ const Lamp: React.FC<LampProps> = (props) => {
   const lampStyle = css`
     width: calc(${radius} * 2);
     height: calc(${radius} * 2);
-    background: ${color};
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: ${color};
     z-index: -999999;
     border-radius: 50%;
     filter: blur(${blur});
