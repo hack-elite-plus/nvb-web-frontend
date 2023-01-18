@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Features from "../layout/Features";
 import Footer from "../layout/Footer";
 import Hero from "../layout/Hero";
